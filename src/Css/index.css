@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-family: 'Noto Sans TC', sans-serif, sans-serif, Arial, Helvetica, sans-serif, "微軟正黑體";
+}
+
+/* 
+.default-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.defaut-footer {
+  min-height: 160px;
+  width: 100%;
+  background-color: white;
+} */

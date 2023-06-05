@@ -1,0 +1,335 @@
+* {
+      box-sizing: border-box;
+      position: relative;
+      margin: 0;
+      padding: 0;
+}
+
+.LogInContainer {
+      width: 100%;
+      top: 65px;
+      padding-top: 40px;
+      padding-bottom: 10px;
+      margin-bottom: 60px;
+      animation: slideRight 0.5s ease-out forwards;
+}
+
+.LogInNightContainer {
+      width: 100%;
+      top: 65px;
+      padding-top: 40px;
+      padding-bottom: 10px;
+      margin-bottom: 60px;
+      background-color: #30302f;
+      animation: slideRight 0.5s ease-out forwards;
+}
+
+@keyframes slideRight {
+      0% {
+            transform: translateX(-200px);
+            opacity: 0;
+      }
+
+      25% {
+            transform: translateX(-100px);
+            opacity: 0.3;
+      }
+
+      50% {
+            transform: translateX(-50px);
+            opacity: 0.7;
+      }
+
+      50% {
+            transform: translateX(0px);
+            opacity: 1;
+      }
+}
+
+
+/* .SignPartRow {
+      border: 2px solid blue;
+} */
+
+/* .SignPartCol {
+      border: 2px solid orange
+} */
+
+
+.LogInTitle {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+}
+
+.LogInNightTitle {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      color: white;
+}
+
+
+
+.AnimatedText {
+      animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+      0% {
+            color: black;
+      }
+
+      50% {
+            color: red;
+      }
+
+      100% {
+            color: black;
+      }
+}
+
+.LogInMethods {
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 50px;
+      text-align: center;
+}
+
+.LogInEmailSection {
+      margin: 0 auto;
+      width: 500px;
+}
+
+.label {
+      margin: 1rem 0;
+}
+
+.Nightlabel {
+      margin: 1rem 0;
+      color: white;
+}
+
+.labelAnimation {
+      position: relative;
+
+}
+
+.labelAnimation::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: red;
+      animation: changeLabel 3s infinite;
+}
+
+@keyframes changeLabel {
+      0% {
+            width: 0;
+      }
+
+      20% {
+            width: 20%;
+      }
+
+      100% {
+            width: 100%;
+      }
+}
+
+.Input {
+      width: 100%;
+      border: 2px solid #ced4da;
+      border-radius: 4px;
+      padding: 8px 12px;
+      transition: border-color 0.3s ease;
+}
+
+.Input:hover {
+      border-color: pink;
+}
+
+.Submit {
+      display: block;
+      border-radius: 5px;
+      width: 100%;
+      height: 50px;
+      margin-top: 1rem;
+      background-color: #10a37f;
+      color: #ffffff;
+}
+
+.Submit:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+      0% {
+            transform: translate(1px, 1px) rotate(0deg);
+      }
+
+      10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+      }
+
+      20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+      }
+
+      30% {
+            transform: translate(3px, 2px) rotate(0deg);
+      }
+
+      40% {
+            transform: translate(1px, -1px) rotate(1deg);
+      }
+
+      50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+      }
+
+      60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+      }
+
+      70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+      }
+
+      80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+      }
+
+      90% {
+            transform: translate(1px, 2px) rotate(0deg);
+      }
+
+      100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+      }
+}
+
+.LogInThridWay {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      padding-top: 25px;
+}
+
+.LogInTitle {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+}
+
+.LogInNightTitle {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      color: white;
+}
+
+.GoogleContainer {
+      display: flex;
+      width: 100%;
+      cursor: pointer;
+      outline: 0;
+      background-color: #ffffff;
+      height: 40px;
+      margin: 1rem 0;
+}
+
+.GoogleIcon {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url(../Image/GoogleIcon.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: translateX(180%);
+}
+
+.GooglePara {
+      font-size: 20px;
+      transform: translateX(50%);
+}
+
+.FaceBookContainer {
+      display: flex;
+      width: 100%;
+      cursor: pointer;
+      outline: 0;
+      background-color: #ffffff;
+      height: 40px;
+      margin: 1rem 0;
+}
+
+.FaceBookIcon {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url(../Image/Facebook_icon.svg.webp);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: translateX(180%);
+}
+
+.FacebookPara {
+      font-size: 20px;
+      transform: translateX(50%);
+}
+
+.AlreadyAccount {
+      display: block;
+      margin: 0 auto;
+      top: 1rem;
+}
+
+.AlreadyNightAccount {
+      display: block;
+      margin: 0 auto;
+      top: 1rem;
+      color: white;
+}
+
+@media (max-width: 900px) {
+      .LogInEmailSection {
+            margin: 0 1.5rem;
+      }
+}
+
+@media (max-width: 796px) {
+      .GooglePara {
+            font-size: 10px;
+            transform: translateX(5%);
+      }
+
+      .FacebookPara {
+            font-size: 10px;
+            transform: translateX(5%);
+      }
+
+      .FaceBookIcon {
+            width: 15px;
+            height: 15px;
+            transform: translateX(10%);
+      }
+
+      .GoogleIcon {
+            width: 15px;
+            height: 15px;
+            transform: translateX(10%);
+      }
+
+      .AlreadyAccount,
+      .AlreadyNightAccount {
+            top: 0;
+            font-size: 10px;
+      }
+}

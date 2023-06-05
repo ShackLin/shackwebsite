@@ -1,0 +1,129 @@
+* {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+/* 以下主要為AboutMe.js內的主要元件 */
+.Navbar {
+      background-color: #ffeeff;
+      border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+      top: 75px;
+      width: 100%;
+      z-index: 6;
+      padding-top: 15px;
+      position: fixed;
+}
+
+.NavNight {
+      padding-top: 15px;
+      background-color: black;
+      margin-bottom: 120px;
+      border-bottom: 3px solid white;
+
+}
+
+.navContainer {
+      margin: 0 auto;
+}
+
+
+
+.navItem {
+      display: block;
+      font-size: 20px;
+      margin: 0 20px;
+      color: #7f77ff;
+      font-weight: 500;
+      font-family: 'Noto Sans TC', sans-serif, sans-serif, Arial, Helvetica, sans-serif, "微軟正黑體";
+}
+
+.navItem:hover {
+      bottom: 0.5rem;
+}
+
+.navItem:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #000;
+      transition: width 0.2s ease-in-out;
+}
+
+.navItem:hover:before {
+      width: 100%;
+}
+
+.ItemNight {
+      display: block;
+      font-size: 20px;
+      margin: 0 20px;
+      color: white;
+      font-weight: 500;
+      font-family: 'Noto Sans TC', sans-serif, sans-serif, Arial, Helvetica, sans-serif, "微軟正黑體";
+}
+
+.ItemNight:hover {
+      color: white;
+      bottom: 0.5rem;
+}
+
+.ItemNight:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #fff;
+      transition: width 0.3s ease-in-out;
+}
+
+.ItemNight:hover:before {
+      width: 100%;
+}
+
+@media (max-width: 577px) {
+      .Navbar {
+            top: 50px;
+      }
+
+      .navItem {
+            font-size: 10px;
+      }
+
+      .ItemNight {
+            font-size: 10px;
+      }
+
+}
+
+.decImage {
+      width: 80%;
+      right: 50%;
+      top: 0;
+      transform: translate(50%, 0);
+      transform: translate(50%, 0);
+      display: block;
+      position: absolute;
+}
+
+.decImage2 {
+      width: 60%;
+      left: 50%;
+      top: 70%;
+      transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      display: block;
+      position: absolute;
+}
+
+.hidden {
+      display: none;
+}

@@ -1,0 +1,177 @@
+* {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.TodoShopContainer {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0 16px;
+}
+
+.TodoRow {
+      margin: 0 -16px;
+}
+
+.TodoColRight {
+      transition: right 1s ease-out, opacity 1s ease-out;
+}
+
+.TodoColLeft {
+      transition: left 1s ease-out, opacity 1s ease-out;
+}
+
+
+.TodoImageContainer {
+      width: 100%;
+}
+
+.TodoImage {
+      background-image: url(../Image/TodoList.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+}
+
+.TodoImageContainer:before {
+      content: '';
+      display: block;
+      width: 75%;
+      padding-top: 75%;
+}
+
+.TodoImageContainer .TodoImage {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+}
+
+.TodoImageContainer:after {
+      content: "CLICK";
+      display: block;
+      color: #fff;
+      font-size: 1rem;
+      line-height: 2;
+      letter-spacing: .1rem;
+      text-align: center;
+      background-color: rgba(105, 115, 127, .5);
+      position: absolute;
+      width: 92px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      backdrop-filter: blur(5px);
+      transition: all .2s;
+}
+
+.TodoImageContainer:hover:after {
+      width: 150px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+}
+
+.subTitleSection {
+      display: flex;
+      margin-bottom: 24px;
+      margin-top: 20px;
+}
+
+.subTitle {
+      color: black;
+      font-size: 1.5rem;
+      /* line-height: 1.5; */
+      font-weight: 500;
+      letter-spacing: .05rem;
+}
+
+.subNightTitle {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: .05rem;
+}
+
+.subTitleLine {
+      display: block;
+      height: 31px;
+      width: 2px;
+      background-color: #807178;
+      margin-left: 8px;
+}
+
+.subNightTitleLine {
+      display: block;
+      height: 31px;
+      width: 2px;
+      background-color: white;
+      margin-left: 8px;
+}
+
+/* .paraSection {
+      border: 1px solid red;
+} */
+
+.paraTitle {
+      font-size: 1.2rem;
+      font-weight: 400;
+      letter-spacing: .0875rem;
+      text-align: justify;
+      margin-bottom: 10px;
+}
+
+.paraNightTitle {
+      font-size: 1.2rem;
+      font-weight: 400;
+      letter-spacing: .0875rem;
+      text-align: justify;
+      margin-bottom: 10px;
+      color: white;
+}
+
+.para {
+      color: black;
+      margin-bottom: 12px;
+      font-size: 1rem;
+      line-height: 2;
+      font-weight: 400;
+      letter-spacing: .0875rem;
+      text-align: justify;
+}
+
+.Nightpara {
+      color: white;
+      margin-bottom: 12px;
+      font-size: 1rem;
+      line-height: 2;
+      font-weight: 400;
+      letter-spacing: .0875rem;
+      text-align: justify;
+}
+
+
+.toolIcon {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      justify-content: left;
+}
+
+.Icon {
+      width: 30px;
+      height: 30px;
+      margin: 0 30px;
+}
+
+.NightIcon {
+      width: 30px;
+      height: 30px;
+      margin: 0 30px;
+      color: white;
+}

@@ -1,0 +1,137 @@
+* {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.SignUpContainer {
+      width: 100%;
+      top: 65px;
+      padding-top: 10px;
+      margin-bottom: 45px;
+      animation: slideRight 0.5s ease-out forwards;
+}
+
+.SignUpNightContainer {
+      width: 100%;
+      top: 65px;
+      padding-top: 10px;
+      margin-bottom: 45px;
+      background-color: #30302f;
+      animation: slideRight 4s ease-out forwards;
+}
+
+@keyframes slideRight {
+      0% {
+            transform: translateX(-200px);
+            opacity: 0;
+      }
+
+      25% {
+            transform: translateX(-100px);
+            opacity: 0.3;
+      }
+
+      50% {
+            transform: translateX(-50px);
+            opacity: 0.7;
+      }
+
+      50% {
+            transform: translateX(0px);
+            opacity: 1;
+      }
+}
+
+.SignUpRow {
+      padding-bottom: 50px;
+}
+
+/* .SignUpCol {
+      border: 2px solid green;
+} */
+
+.SignUpLogo {
+      margin: 0 auto;
+      width: 70px;
+      height: 70px;
+      background-image: url(../Image/logo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 3rem;
+      border-radius: 10px;
+}
+
+@media (max-width: 620px) {
+      .SignUpLogo {
+            width: 50px;
+            height: 50px;
+      }
+}
+
+.SignUpPara {
+      margin: 0 auto;
+      text-align: center;
+}
+
+.SignUpNightPara {
+      margin: 0 auto;
+      text-align: center;
+      color: white;
+}
+
+.SignUpWelcome {
+      margin-bottom: 3rem;
+}
+
+.SignUpButtons {
+      margin: 0 auto;
+      text-align: center;
+}
+
+.LogInButton {
+      border-radius: 5px;
+      width: 150px;
+      height: 50px;
+      margin: 0 5rem;
+      background-color: #10a37f;
+      color: #ffffff;
+}
+
+.SignUpButton {
+      border-radius: 5px;
+      width: 150px;
+      height: 50px;
+      margin: 0 5rem;
+      background-color: #10a37f;
+      color: #ffffff;
+}
+
+@media (max-width: 620px) {
+      .SignUpRow {
+            padding-top: 20px;
+      }
+
+      .SignUpWelcome {
+            font-size: 20px;
+            margin-bottom: 1.5rem;
+      }
+
+      .SignUpNightPara .SignUpPara p {
+            font-size: 15px;
+      }
+
+      .LogInButton {
+            width: 80px;
+            height: 35px;
+            margin: 10px 20px;
+      }
+
+      .SignUpButton {
+            width: 80px;
+            height: 35px;
+            margin: 10px 20px;
+      }
+}

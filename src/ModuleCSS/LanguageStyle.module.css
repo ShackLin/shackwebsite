@@ -1,0 +1,208 @@
+* {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.languageContainer {
+      top: 100px;
+      width: 100%;
+      padding-top: 120px;
+      padding-bottom: 120px;
+      right: 5px;
+      width: 100%;
+      /* margin: 0 auto; */
+}
+
+.languageNightContainer {
+      background-image: url(../Image/skillPage.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      top: 100px;
+      width: 100%;
+      /* margin: 0 auto; */
+      padding-top: 120px;
+      padding-bottom: 150px;
+      /* margin-bottom: 131px; */
+}
+
+.languageRow {
+      margin: 0 -16px;
+}
+
+/* .languageCol {
+      border: 2px solid green;
+} */
+
+.languageTitle {
+      margin-bottom: 35px;
+      color: #69737f;
+      font-size: 2rem;
+      z-index: 1;
+      display: block;
+      text-align: center;
+}
+
+.languageNightTitle {
+      margin-bottom: 35px;
+      color: white;
+      font-size: 2rem;
+      z-index: 1;
+      display: block;
+      text-align: center;
+}
+
+.ItemsContainer {
+      margin: 10px 0;
+}
+
+.itemTitle {
+      width: 100%;
+      font-weight: 400;
+      font-size: 1rem;
+}
+
+.itemNightTitle {
+      width: 100%;
+      font-weight: 400;
+      font-size: 1rem;
+      color: white;
+}
+
+.languageItem {
+      display: flex;
+}
+
+.languageBar {
+      width: 100%;
+      height: 1rem;
+      border: 1.5px solid black;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      padding: 3px;
+}
+
+.languageNightBar {
+      width: 100%;
+      height: 1rem;
+      border: 1.5px solid white;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      padding: 3px;
+}
+
+.indicatorBar {
+      width: calc(90%);
+      height: 100%;
+      background-color: rgb(26, 201, 64);
+      border-radius: 0.5rem;
+      transition: all 0.5s linear 0s;
+      animation: expandBar 1s ease-in-out forwards;
+      animation-delay: 10s;
+}
+
+
+
+.indicatorBar2 {
+      width: calc(80%);
+      height: 100%;
+      background-color: rgb(26, 201, 64);
+      border-radius: 0.5rem;
+      transition: all 0.5s linear 0s;
+      animation: expandBar2 1s ease-in-out forwards;
+      animation-delay: 10s;
+}
+
+
+
+.indicatorBar3 {
+      width: calc(70%);
+      height: 100%;
+      background-color: #156cf4;
+      border-radius: 0.5rem;
+      transition: all 0.5s linear 0s;
+      animation: expandBar3 1s ease-in-out forwards;
+      animation-delay: 10s;
+}
+
+
+
+.indicatorBar4 {
+      width: calc(80%);
+      height: 100%;
+      background-color: #156cf4;
+      border-radius: 0.5rem;
+      transition: all 0.5s linear 0s;
+      animation: expandBar4 1s ease-in-out forwards;
+      animation-delay: 10s;
+}
+
+.indicatorBar5 {
+      width: calc(35%);
+      height: 100%;
+      background-color: #f4154a;
+      border-radius: 0.5rem;
+      transition: all 0.5s linear 0s;
+      animation: expandBar5 1s ease-in-out forwards;
+      animation-delay: 10s;
+}
+
+@keyframes expandBar {
+      0% {
+            width: 0;
+      }
+
+      100% {
+            width: calc(90%);
+      }
+}
+
+@keyframes expandBar2 {
+      0% {
+            width: 0;
+      }
+
+      100% {
+            width: calc(80%);
+      }
+}
+
+@keyframes expandBar3 {
+      0% {
+            width: 0;
+      }
+
+      100% {
+            width: calc(70%);
+      }
+}
+
+@keyframes expandBar4 {
+      0% {
+            width: 0;
+      }
+
+      100% {
+            width: calc(35%);
+      }
+}
+
+.languageLevel {
+      display: block;
+      width: 50%;
+      text-align: center;
+      bottom: 2px;
+      font-size: 15px;
+}
+
+.languageNightLevel {
+      display: block;
+      width: 50%;
+      text-align: center;
+      bottom: 2px;
+      font-size: 15px;
+      color: black;
+}

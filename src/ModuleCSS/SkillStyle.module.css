@@ -1,0 +1,198 @@
+* {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.SkillContainer {
+      top: 130px;
+      width: 100%;
+      margin-bottom: 200px;
+      padding-bottom: 20px;
+      margin-top: 140px;
+      padding-top: 40px;
+}
+
+.SkillNightContainer {
+      top: 130px;
+      width: 100%;
+      background-image: url(../Image/skillPage2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      margin-bottom: 200px;
+      padding-bottom: 20px;
+      padding-top: 40px;
+      margin-top: 140px;
+}
+
+.skillTitle {
+      margin-bottom: 45px;
+      color: #69737f;
+      text-align: center;
+      font-size: 3rem;
+      position: relative;
+      z-index: 1;
+}
+
+.skillNightTitle {
+      margin-bottom: 45px;
+      color: white;
+      text-align: center;
+      font-size: 3rem;
+      position: relative;
+      z-index: 1;
+}
+
+.skillRow {
+      margin: 40px -16px;
+}
+
+.skillCol {
+      display: flex;
+}
+
+.skillTitle2 {
+      color: #69737f;
+      font-size: 2rem;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+}
+
+.skillNightTitle2 {
+      color: white;
+      font-size: 2rem;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+}
+
+.skillItems {
+      margin: 0 auto;
+}
+
+/* .skillItem {
+      display: flex;
+      justify-content: space-evenly;
+      border: 1px solid blue;
+}  */
+
+.flexItem {
+      margin: 25px 0;
+}
+
+.subtitleSection {
+      margin-bottom: 12px;
+      margin: 20px 0;
+}
+
+.subtitle {
+      color: #7a7585;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      font-weight: 500;
+      letter-spacing: .05rem;
+}
+
+.Nightsubtitle {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      font-weight: 500;
+      letter-spacing: .05rem;
+      color: white;
+}
+
+.tagSection {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      margin: 20px 0;
+}
+
+.Icon {
+      width: 30px;
+      height: 30px;
+      margin: 0 30px;
+}
+
+.NightIcon {
+      width: 30px;
+      height: 30px;
+      margin: 0 30px;
+      color: white;
+}
+
+@media (max-width: 265px) {
+      .flexItem {
+            display: flex;
+            align-items: center;
+      }
+
+}
+
+.skillImageContainer {
+      width: 100%;
+}
+
+.skillImageContainer:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 75%;
+}
+
+.skillImage {
+      background-image: url(../Image/skillPage.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+.skillImageContainer .skillImage {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 10%;
+}
+
+@media(max-width:768px) {
+      .skillTitle {
+            font-size: 40px;
+            margin-bottom: 0;
+      }
+
+      .skillTitle2 {
+            font-size: 25px;
+      }
+
+      .skillNightTitle {
+            font-size: 40px;
+            margin-bottom: 0;
+      }
+
+      .skillNightTitle2 {
+            font-size: 25px;
+      }
+
+      .subtitle {
+            font-size: 15px;
+      }
+
+      .Nightsubtitle {
+            font-size: 15px;
+      }
+
+      .Icon {
+            width: 20px;
+            height: 20px;
+      }
+
+      .NightIcon {
+            width: 20px;
+            height: 20px;
+      }
+}

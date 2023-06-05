@@ -1,0 +1,106 @@
+.onoffswitch2 {
+      position: relative;
+      width: 74px;
+      /* -webkit-user-select:none;
+       -moz-user-select:none; 
+       -ms-user-select: none; */
+}
+
+.onoffswitch-checkbox2 {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+}
+
+.onoffswitch-label2 {
+      display: block;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid #999999;
+      border-radius: 31px;
+      min-width: 60px;
+      min-height: 25px;
+}
+
+.onoffswitch-inner2 {
+      display: block;
+      width: 200%;
+      margin-left: -100%;
+      transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner2:before,
+.onoffswitch-inner2:after {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 30px;
+      padding: 0;
+      line-height: 30px;
+      font-size: 16px;
+      color: white;
+      font-family: Trebuchet, Arial, sans-serif;
+      font-weight: bold;
+      box-sizing: border-box;
+}
+
+.onoffswitch-inner2:before {
+      content: "中文";
+      padding-left: 10px;
+      background-color: #20D933;
+      color: #FFFFFF;
+}
+
+.onoffswitch-inner2:after {
+      content: "DE";
+      padding-right: 9px;
+      background-color: #000203;
+      color: #FFFFFF;
+      text-align: right;
+}
+
+.onoffswitch-switch2 {
+      display: block;
+      width: 21px;
+      margin: 4.5px;
+      background: #FFFFFF;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 40px;
+      border: 2px solid #999999;
+      border-radius: 31px;
+      transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-inner2 {
+      margin-left: 0;
+}
+
+.onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-switch2 {
+      right: 0px;
+}
+
+@media (max-width: 576px) {
+      .onoffswitch2 {
+            display: none;
+      }
+}
+
+@media (max-width: 710px) {
+
+      .onoffswitch-inner2:before,
+      .onoffswitch-inner2:after {
+            font-size: 10px;
+      }
+}
+
+@media (max-width: 640px) {
+      .onoffswitch2 {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 2rem;
+      }
+}

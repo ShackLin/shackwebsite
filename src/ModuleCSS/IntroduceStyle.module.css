@@ -1,0 +1,164 @@
+* {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+/* 以下主要為IntroducePage,簡介的主要元件 */
+.aboutMeContainer {
+      background-color: white;
+      padding: 0 16px;
+      z-index: 1;
+      top: 300px;
+      margin-bottom: 190px;
+      width: 100%;
+      /* left: 50%;
+      transform: translateX(-50%); */
+}
+
+.NightAboutMe {
+      background-image: url(../Image/Introduce3.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      z-index: 1;
+      top: 300px;
+      width: 100%;
+      margin-bottom: 190px;
+      /* left: 50%;
+      transform: translateX(-50%); */
+}
+
+.aboutMeRow {
+      margin: 0 -16px;
+}
+
+/* .aboutMeCol {
+      border: 2px solid red;
+} */
+
+.aboutMeColRight {
+      padding-bottom: 40px;
+      padding-left: 40px;
+      opacity: 0;
+      animation: slidetoRight 1s ease-out forwards;
+
+}
+
+@keyframes slidetoRight {
+      0% {
+            transform: translateX(200px);
+      }
+
+      100% {
+            transform: translateX(0px);
+            opacity: 1;
+      }
+}
+
+.flexCenter {
+      display: flex;
+      align-items: center;
+}
+
+.aboutMeTitle {
+      margin-bottom: 45px;
+      color: #69737f;
+      text-align: center;
+      font-size: 3rem;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      animation: slide-right 1s ease-out forwards;
+}
+
+
+.NightTitle {
+      color: white;
+      z-index: 1;
+      opacity: 0;
+      animation: slide-right 1s ease-out forwards;
+}
+
+@keyframes slide-right {
+      0% {
+            transform: translateX(-200px);
+      }
+
+      100% {
+            transform: translateX(0px);
+            opacity: 1;
+      }
+}
+
+.paraSection {
+      width: 100%;
+}
+
+
+
+.para {
+      color: rgba(0, 0, 0, .8);
+      font-size: 1.25rem;
+      letter-spacing: .125rem;
+}
+
+.para:not(:last-child) {
+      margin-bottom: 32px;
+}
+
+.paraGerman {
+      font-size: 1rem;
+      letter-spacing: 0;
+      text-align: center;
+      text-indent: 15px;
+}
+
+.NightPara {
+      color: white;
+}
+
+@media(max-width:760px) {
+      .para {
+            font-size: 1rem;
+      }
+
+      .paraGerman {
+            font-size: 0.8rem;
+
+      }
+}
+
+.IntroImageContainer {
+      width: 100%;
+}
+
+.IntroImageContainer:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 100%;
+}
+
+.IntroImage {
+      background-image: url(../Image/Introduce2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+}
+
+.IntroImageContainer .IntroImage {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+}
+
+@media (max-width: 768px) {
+      .offsetCol {
+            margin-bottom: 30px;
+      }
+}

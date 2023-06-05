@@ -1,0 +1,104 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+* {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.auslandContainer {
+      border: 2px solid red;
+      width: 50%;
+      margin: 10rem auto;
+      height: 570px;
+}
+
+/* .auslandTitle {
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 30px;
+} */
+
+/* .auslandRow {
+      border: 2px solid blue;
+}
+
+.auslandCol {
+      border: 2px solid green;
+      margin: 1rem 0;
+} */
+
+.slide {
+      transform: scale(0.2);
+      transition: transform 300ms;
+      opacity: 0.5;
+}
+
+/* .slide img {
+      width: 20rem;
+      margin: 0 auto;
+
+
+      display: block;
+
+} */
+
+
+.slide img {
+      width: 20rem;
+      margin: 0 auto;
+}
+
+.slide {
+      transform: scale(0.2);
+      transition: transform 300ms;
+      opacity: 0.5;
+}
+
+.activeSlide {
+      transform: scale(1.1);
+      opacity: 1;
+}
+
+.arrow {
+      background-color: #fff;
+      position: absolute;
+      cursor: pointer;
+      z-index: 10;
+}
+
+.arrow svg {
+      transition: color 300ms;
+}
+
+.arrow svg:hover {
+      color: #68edff;
+}
+
+.next {
+      right: 0%;
+      top: 50%;
+}
+
+.prev {
+      left: 0%;
+      top: 50%;
+}
+
+
+.explanatoryText {
+      background-color: #ffffff;
+      padding: 10px;
+      margin-top: 10px;
+      text-align: center;
+}
+
+.explanatoryText p {
+      margin: 0;
+      font-size: 14px;
+      color: #333333;
+}

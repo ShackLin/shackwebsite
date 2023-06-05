@@ -1,0 +1,104 @@
+.onoffswitch {
+      position: relative;
+      width: 74px;
+      /* -webkit-user-select:none; 
+      -moz-user-select:none; 
+      -ms-user-select: none; */
+}
+
+.onoffswitch-checkbox {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+}
+
+.onoffswitch-label {
+      display: block;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid #080808;
+      border-radius: 31px;
+      min-width: 60px;
+      min-height: 25px;
+}
+
+.onoffswitch-inner {
+      display: block;
+      width: 200%;
+      margin-left: -100%;
+      transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 30px;
+      padding: 0;
+      line-height: 30px;
+      font-size: 16px;
+      color: white;
+      font-family: Trebuchet, Arial, sans-serif;
+      font-weight: bold;
+      box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+      content: 'DAY';
+      padding-left: 10px;
+      background-color: #FFFFFF;
+      color: black;
+}
+
+.onoffswitch-inner:after {
+      content: "NIT";
+      padding-right: 9px;
+      background-color: #030000;
+      color: white;
+      text-align: right;
+}
+
+.onoffswitch-switch {
+      display: block;
+      width: 21px;
+      margin: 4.5px;
+      background: #FFFFFF;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 40px;
+      border: 2px solid #080808;
+      border-radius: 31px;
+      transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+      margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+      right: 0px;
+}
+
+@media (max-width: 576px) {
+      .onoffswitch {
+            display: none;
+      }
+}
+
+@media (max-width: 710px) {
+
+      .onoffswitch-inner:before,
+      .onoffswitch-inner:after {
+            font-size: 10px;
+      }
+}
+
+@media (max-width: 640px) {
+      .onoffswitch {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+      }
+}

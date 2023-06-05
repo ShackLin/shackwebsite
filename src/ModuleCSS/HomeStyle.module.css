@@ -1,0 +1,186 @@
+* {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+
+.homeContainer {
+
+      width: 100%;
+      padding: 0 16px;
+      background-color: #f6f6f6;
+      top: 40px;
+      /* margin-bottom: -10px; */
+}
+
+.homeNight {
+      top: 40px;
+      width: 100%;
+      padding: 0 16px;
+      background-image: url(../Image//Introduce.jpg);
+      opacity: 0.7;
+      background-position: center;
+      /* margin-bottom: -10px; */
+}
+
+.homeNight::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /* background-color: rgba(255, 255, 255, 0.9); */
+}
+
+.homeRow {
+      margin: 0 -16px;
+      padding-top: 1rem;
+}
+
+.homeColRight {
+      padding-top: 1.5rem;
+      opacity: 0;
+      animation: slide-right 0.5s ease-out forwards;
+}
+
+.homeColLeft {
+      padding-top: 1rem;
+      opacity: 0;
+      animation: slide-left 0.5s ease-out forwards;
+
+}
+
+@keyframes slide-left {
+      0% {
+            transform: translateX(-80px);
+      }
+
+      100% {
+            transform: translateX(0px);
+            opacity: 1;
+      }
+}
+
+@keyframes slide-right {
+      0% {
+            transform: translateX(80px);
+      }
+
+      100% {
+            transform: translateX(0px);
+            opacity: 1;
+      }
+}
+
+
+
+.flexCenter {
+      display: flex;
+      align-items: center;
+}
+
+/* 有關第一個Col的設定 */
+.homeImageContainer {
+      width: 100%;
+}
+
+.homeImageContainer:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 75%;
+}
+
+.homeImage {
+      background-image: url(../Image/homePage2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+}
+
+.homeImageContainer .homeImage {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+}
+
+/* 有關第二個Col的設定 */
+
+.titleSection {
+      padding: 20px 0;
+      width: 100%;
+}
+
+
+.introTitle {
+      line-height: 1.5;
+      font-weight: 300;
+      color: rgba(0, 0, 0, .6);
+      /* background-color: #f6f6f6; */
+      display: inline-block;
+      padding-right: 16px;
+}
+
+
+.paraSection {
+      display: flex;
+}
+
+.decLine2 {
+      background-color: rgba(0, 0, 0, .6);
+      padding: 0 1px;
+      margin-left: 16px;
+      margin-right: 32px;
+      height: 230px;
+
+}
+
+.para {
+      /* color: #69737f; */
+      color: black;
+      font-size: 20px;
+      line-height: 2;
+      font-weight: 400;
+      letter-spacing: .0875rem;
+      text-align: justify;
+}
+
+.pianoAnimation {
+      animation: pianoAnimation 1s infinite;
+}
+
+@keyframes pianoAnimation {
+
+      0% {
+            transform: translateY(0);
+      }
+
+      50% {
+            transform: translateY(-30px);
+      }
+
+      100% {
+            transform: translateY(0);
+      }
+}
+
+.paraGerman {
+      color: black;
+      font-size: 15px;
+      line-height: 2;
+      font-weight: 400;
+      text-align: justify;
+      letter-spacing: .05rem;
+}
+
+@media (max-width: 768px) {
+      .offsetCol {
+            margin-top: 20px;
+            /* Add your desired offset value */
+      }
+}

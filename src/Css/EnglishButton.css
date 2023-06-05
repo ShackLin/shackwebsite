@@ -1,0 +1,81 @@
+.onoffswitch3 {
+      position: relative;
+      width: 74px;
+      /* -webkit-user-select:none; 
+      -moz-user-select:none; 
+      -ms-user-select: none; */
+}
+
+.onoffswitch-checkbox3 {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+}
+
+.onoffswitch-label3 {
+      display: block;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid #080808;
+      border-radius: 31px;
+}
+
+.onoffswitch-inner3 {
+      display: block;
+      width: 200%;
+      margin-left: -100%;
+      transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner3:before,
+.onoffswitch-inner3:after {
+      display: block;
+      float: left;
+      width: 50%;
+      height: 30px;
+      padding: 0;
+      line-height: 30px;
+      font-size: 16px;
+      color: white;
+      font-family: Trebuchet, Arial, sans-serif;
+      font-weight: bold;
+      box-sizing: border-box;
+}
+
+.onoffswitch-inner3:before {
+      content: "En";
+      padding-left: 10px;
+      background-color: #030000;
+      color: #FFFFFF;
+}
+
+.onoffswitch-inner3:after {
+      content: "中文";
+      padding-right: 9px;
+      background-color: #20D933;
+      ;
+      color: #120000;
+      text-align: right;
+}
+
+.onoffswitch-switch3 {
+      display: block;
+      width: 21px;
+      margin: 4.5px;
+      background: #FFFFFF;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 40px;
+      border: 2px solid #080808;
+      border-radius: 31px;
+      transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox3:checked + .onoffswitch-label3 .onoffswitch-inner3 {
+      margin-left: 0;
+}
+
+.onoffswitch-checkbox3:checked + .onoffswitch-label3 .onoffswitch-switch3 {
+      right: 0px;
+}

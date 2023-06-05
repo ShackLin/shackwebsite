@@ -1,0 +1,177 @@
+* {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.experienceContainer {
+      background-color: white;
+      padding: 70px 70px;
+      z-index: 1;
+      top: 335px;
+      width: 100%;
+      /* left: 50%;
+      transform: translateX(-50%); */
+      margin-bottom: 400px;
+}
+
+.experienceNightContainer {
+      padding: 70px 70px;
+      z-index: 1;
+      top: 335px;
+      background-image: url(../Image/Experience3.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      width: 100%;
+      /* left: 50%;
+      transform: translateX(-50%); */
+      margin-bottom: 400px;
+}
+
+.experienceTitle {
+      margin-bottom: 45px;
+      color: #69737f;
+      text-align: center;
+      font-size: 3rem;
+      display: block;
+      top: -70px;
+}
+
+.experienceNightTitle {
+
+      display: block;
+      margin-bottom: 45px;
+      color: white;
+      text-align: center;
+      font-size: 3rem;
+      top: -70px;
+}
+
+.experienceRow {
+      margin: 0 -16px;
+      display: flex;
+}
+
+/* .experienceColLeft {
+      border: 2px solid red;
+} */
+
+
+@media (max-width: 768px) {
+      .ExperienceCol {
+            margin-top: 30px;
+      }
+}
+
+.subtitleSection {
+      margin: 0 auto;
+      text-align: center;
+}
+
+.subtitleNightSection {
+      margin: 0 auto;
+      color: white;
+}
+
+@media (max-width: 768px) {
+      .experienceCol .subtitleSection {
+            margin-bottom: 16px;
+      }
+}
+
+.subtitle .subtitleNight {
+      color: black;
+      font-size: 1.2rem;
+      letter-spacing: .075rem;
+      font-weight: 500;
+}
+
+.subtitleNight {
+      color: white;
+}
+
+.timeLine {
+      color: #db1212;
+      font-size: 0.6rem;
+      letter-spacing: .125rem;
+      font-weight: 400;
+      text-align: center;
+}
+
+.NighttimeLine {
+      color: white;
+      font-size: 0.6rem;
+      letter-spacing: .125rem;
+      font-weight: 400;
+      text-align: center;
+}
+
+.listItems {
+      text-align: center;
+      list-style: none;
+}
+
+.listItem .listNightItem {
+      list-style-image: url(../Image/list-icon.svg);
+      color: #50530b;
+      font-size: 0.6rem;
+      font-weight: 400;
+}
+
+.listNightItem {
+      color: #fff;
+}
+
+.ExperienceImageContainer {
+      width: 100%;
+}
+
+.ExperienceImageContainer:before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 130%;
+}
+
+.ExperienceImage {
+      background-image: url(../Image/Experience.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.ExperienceImageContainer .ExperienceImage {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+}
+
+@media(max-width:765px) {
+      .subtitleNight {
+            font-size: 20px;
+      }
+
+      .subtitle {
+            font-size: 20px;
+      }
+
+      .timeLine {
+            font-size: 10px;
+      }
+
+      .NighttimeLine {
+            font-size: 8px;
+      }
+
+      .listItem {
+            font-size: 10px;
+      }
+
+      .listNightItem {
+            font-size: 10px;
+      }
+}
